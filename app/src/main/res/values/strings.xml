@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Unip Class</string>
+    <string name="buscar">Buscar</string>
+    <string name="voltar">Voltar</string>
+    <string name="campus">Campus</string>
+    <string name="consulta_turma">Consulta por Turma</string>
+    <string name="consulta_sala">Consulta por Sala</string>
+    <string name="periodo">Periodo</string>
+    <string name="curso">Curso</string>
+    <string name="logo">logo</string>
+    <string name="quadra">quadra</string>
+    <string name="semestre">Semestre</string>
+    <string name="refeitorios">Refeitorios</string>
+    <string name="biblioteca">Biblioteca</string>
+    <string name="labs_de_informatica">Labs \n de Informatica</string>
+    <string name="labs_de_fisio">Labs \n de Fisioterapia</string>
+    <string name="labs_de_odonto">Labs \n de odontologia</string>
+    <string name="localize_sua_sala">Localize sua sala</string>
+    <string name="laboratorios">laboratorios</string>
+</resources>

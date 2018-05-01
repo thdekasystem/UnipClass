@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:backgroundTint="@color/colorPrimary"
+    tools:context="deka.com.unipclass.PrincipalActivity"
+    tools:targetApi="lollipop">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/localize_sua_sala"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLocalizarId" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/laboratorios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLabsId" />
+
+    <Button
+        android:id="@+id/btnLocalizarId"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/alfineteloc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLabsId"
+        android:layout_width="97dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/salafixa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="168dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logouniphome" />
+
+</android.support.constraint.ConstraintLayout>

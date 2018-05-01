@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:backgroundTint="@color/colorPrimary"
+    tools:context="deka.com.unipclass.PrincipalActivity"
+    tools:targetApi="lollipop">
+
+    <TextView
+        android:id="@+id/txtConsultaSalaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:text="@string/consulta_sala"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarId" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="168dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logouniphome" />
+
+    <Spinner
+        android:id="@+id/spnCampusID"
+        style="@android:style/Widget.Material.Spinner.Underlined"
+        android:layout_width="225dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:contextClickable="false"
+        android:splitMotionEvents="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Spinner
+        android:id="@+id/spnPeriodo"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="225dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnCampusID" />
+
+    <Spinner
+        android:id="@+id/spnCurso"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="225dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnPeriodo" />
+
+    <Spinner
+        android:id="@+id/spnSemestre"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="225dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnCurso" />
+
+    <Button
+        android:id="@+id/btnBuscarId"
+        android:layout_width="137dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/borderstyle"
+        android:text="@string/buscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnSemestre" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="80dp"
+        android:text="@string/campus"
+        app:layout_constraintBottom_toTopOf="@+id/spnCampusID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="80dp"
+        android:text="@string/periodo"
+        app:layout_constraintBottom_toTopOf="@+id/spnPeriodo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnCampusID"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="80dp"
+        android:text="@string/curso"
+        app:layout_constraintBottom_toTopOf="@+id/spnCurso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnPeriodo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="80dp"
+        android:text="@string/semestre"
+        app:layout_constraintBottom_toTopOf="@+id/spnSemestre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnCurso"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Semestre" />
+
+
+</android.support.constraint.ConstraintLayout>

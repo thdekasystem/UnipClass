@@ -1,0 +1,4 @@
+#Tue May 01 13:32:41 BRT 2018
+base.0=/home/gustavo/AndroidStudioProjects/UnipClass/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
